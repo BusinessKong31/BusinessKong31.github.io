@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  margin-top: 20px;
+}
+h1 {
+  position: absolute;
+  z-index: -1;
+  color: #252525;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 35px;
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  font-size: 48px;
+  text-align: center;
+  z-index: 100;
+}
+a:link,
+a:visited {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.links {
+  text-align: center;
+}
+body {
+  background-color: #111;
+  color: white;
+  -moz-user-select: none;
+  user-select: none;
+}
+img {
+  display: block;
+  border-radius: 50%;
+}
+hr.solid {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #252525;
+}
+.about {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.about h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.details {
+  display: flex;
+  align-items: center;
+}
+.details h4 {
+  margin-left: 20px;
+  font-weight: 400;
+}
+.footer {
+  float: right;
+}
+.footer h5 {
+  font-weight: 400;
+}
+
+.Twitter,
+.Behance,
+.LinkedIn,
+.Instagram,
+.Portfolio,
+.email,
+.github {
+  background-color: #252525;
+  width: 20rem;
+  padding: 20px;
+  border-radius: 14px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    text-align: center;
+    margin: 20px 0px;
+  }
+  h1 {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/* LIGHT MODE */
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+    color: #252525;
+  }
+  h1 {
+    color: rgb(223, 223, 223);
+  }
+  .Twitter,
+  .Behance,
+  .LinkedIn,
+  .Instagram,
+  .Portfolio,
+  .email,
+  .github {
+    background: rgb(223, 223, 223);
+    color: #252525;
+  }
+  a {
+    color: #252525;
+    transition: 0.5s;
+  }
+  a:hover {
+    text-decoration: underline;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  a:link,
+  a:visited {
+    color: #252525;
+  }
+}
